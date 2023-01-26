@@ -1,6 +1,6 @@
 FROM ruby:3.1.1-alpine3.15
 
-RUN apk add --update build-base bash git bash-completion libffi-dev tzdata postgresql-client postgresql-dev nodejs npm yarn
+RUN apk add --update build-base nano bash git bash-completion libffi-dev tzdata postgresql-client postgresql-dev nodejs npm yarn
 
 WORKDIR /app
 
