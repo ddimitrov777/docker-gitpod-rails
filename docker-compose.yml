@@ -22,7 +22,6 @@ services:
       DB_PASSWORD: password
     volumes:
       - .:/app:cached
-      - gem_cache:/gems
     ports:
       - "3000:3000"
       - "3001:3001"
@@ -30,7 +29,6 @@ services:
       - db
 volumes:
   postgres_data: {}
-  gem_cache:
 networks:
   default:
     name: myapp_default
