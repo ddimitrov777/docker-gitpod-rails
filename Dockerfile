@@ -4,6 +4,8 @@ RUN apk add --update build-base bash git bash-completion libffi-dev tzdata postg
 
 WORKDIR /app
 
+ENV BUNDLE_PATH /gems
+
 COPY Gemfile* /app/
 
 RUN gem install bundler
